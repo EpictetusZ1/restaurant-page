@@ -1,0 +1,1 @@
+console.log("Test log from index.js, to check Webpack functionality")
