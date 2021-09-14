@@ -1,18 +1,52 @@
 @import url(reset.css);
 
+:root {
+    --softWhite: #f2ebe9;
+    --softPink: #eddcd9;
+    --pink: #de5499;
+    --green: #264143;
+    --orange: #e99f4c;
+}
+
 body {
-    height: 100vh;
+    height: 5000px;
     width: 100%;
 }
 
 #content {
     width: 100%;
     height: 100%;
-    display: flex;
 }
 
 .main {
     width: 100%;
     height: 100%;
     background-color: #939090;
+    display: inline-flex;
+}
+
+.bowl-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.avo-bowl {
+    height: 1000px;
+}
+
+.green-side {
+    height: 100%;
+    width: 50%;
+    background-color: var(--green);
+}
+
+
+.pink-side {
+    height: 100%;
+    width: 50%;
+    background-color: var(--softPink);
 }
