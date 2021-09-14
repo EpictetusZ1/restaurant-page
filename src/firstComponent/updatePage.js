@@ -8,7 +8,7 @@ const Update = (() => {
         switch (c) {
             case 1:
                 clear()
-                Menu.showMenu(content)
+                Menu.showMenu(content).populateMenu()
                 break
         }
     }
