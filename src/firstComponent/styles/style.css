@@ -1,11 +1,28 @@
 @import url(reset.css);
 
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('../assets/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('../assets/fonts/Cormorant_Garamond/CormorantGaramond-Bold.ttf');
+    font-weight: bold;
+}
+
 :root {
     --softWhite: #f2ebe9;
     --softPink: #eddcd9;
     --pink: #de5499;
     --green: #264143;
     --orange: #e99f4c;
+}
+
+html {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -23,19 +40,48 @@ body {
     height: 100%;
     background-color: #939090;
     display: inline-flex;
+    font-family: "Cormorant Garamond", sans-serif;
+}
+
+.line-container {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.pink-lines {
+    width: 50%;
+    height: auto;
+    margin-left: -35%;
+    margin-bottom: 25px;
+}
+
+.green-lines {
+    width: 50%;
+    height: auto;
+    margin-right: -35%;
+    margin-top: -150px;
 }
 
 .bowl-container {
     height: 100%;
     width: 100%;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     justify-content: center;
 }
 
 .avo-bowl {
     height: 1000px;
+    margin-top: -90px;
+    overflow: hidden;
 }
 
 .green-side {
@@ -55,28 +101,60 @@ body {
 .pink-text-container {
     height: 15%;
     width: 80%;
-    margin-top: 150px;
+    margin-top: 90px;
     margin-left: 30px;
-    padding: 0 150px;
+    padding: 0 30%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-content: center;
     text-align: center;
-    font-size: 5em;
-    word-spacing: 50px;
+    font-size: 4em;
+    word-spacing: 20px;
+    letter-spacing: 2px;
     color: var(--green);
 }
 
 .green-text-container {
     height: 15%;
     width: 50%;
-    margin-top: 700px;
+    margin-top: 60vh;
     margin-left: 50px;
     display: flex;
     justify-content: center;
     align-content: center;
     text-align: left;
-    font-size: 5em;
-    word-spacing: 10px;
+    font-size: 3.7em;
+    letter-spacing: 2px;
     color: var(--pink);
+}
+
+.button-container {
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-button {
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 5;
+    background-color: var(--orange);
+    color: var(--softWhite);
+    font-size: 28px;
+    font-weight: bolder;
+    word-spacing: 0;
+    font-family: inherit;
+    line-height: 60px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-button:hover {
+    cursor: pointer;
+    background-color: #e59336;
 }
