@@ -5,8 +5,7 @@ import Helper from "../helperFunctions/helpers";
 
 const Hero = (() => {
 
-    const showAvocado = () => {
-        const contentMain = document.getElementById("content")
+    const showAvocado = (contentMain) => {
 
         const displayHeroImg = () => {
             const bowlImg = Helper.makeEl("img", {
