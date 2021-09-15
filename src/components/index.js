@@ -2,6 +2,9 @@ import "../styles/style.css"
 import Update from "./updatePage";
 import Hero from "./loadHero"
 
+import NavBar from "./nav";
+
+NavBar.addNavItems()
 
 const content = document.getElementById("content")
 
