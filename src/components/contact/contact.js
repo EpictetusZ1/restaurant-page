@@ -26,13 +26,15 @@ const Contact = (() => {
 
             const buildAbout = () => {
                 const menu = Help.makeEl("div", {
-                    class: "menu-background"
+                    class: "contact-background"
                 })
                 contactContent.appendChild(menu)
             }
             buildAbout()
         }
         addTitle()
+
+        const contactArea = document.querySelector(".contact-background")
 
         const addDesc = () => {
 
