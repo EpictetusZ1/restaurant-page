@@ -22,7 +22,6 @@
 
 html, body {
     max-width: 100%;
-    overflow-y: hidden;
     overflow-x: hidden;
 }
 
@@ -268,13 +267,14 @@ body {
     height: 98%;
     background-color: var(--green);
     border-radius: 35px;
-    display: inherit;
+    display: flex;
     align-items: inherit;
 }
 
 
 .info-container {
     width: 50%;
+    min-width: 50%;
     height: 97%;
     float: left;
     margin-left: 6px;
@@ -315,6 +315,43 @@ body {
     height: 60px;
     width: auto;
     margin-right: 10px;
+}
+
+.quote-one {
+    font-family: Georgia, sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1.8em;
+    color: var(--softWhite);
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.image-area {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    justify-content: center;
+}
+
+.liberty {
+    margin-top: 50px;
+    height: 350px;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
+}
+
+.location-text {
+    width: 100%;
+    margin-top: -75px;
+    text-align: center;
+    font-size: 2em;
+    color: var(--orange);
 }
 
 

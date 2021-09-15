@@ -4,6 +4,8 @@ import mapThing from "./assets/icons/location_on_pink_24dp.svg";
 import phone from "./assets/icons/phone_iphone_pink_24dp.svg";
 import clock from "./assets/icons/schedule_pink_24dp.svg";
 
+import liberty from "./assets/libertyPic.png"
+
 const Contact = (() => {
     const showContact = (content) => {
         const background = () => {
@@ -15,6 +17,7 @@ const Contact = (() => {
         background()
 
         const contactContent = document.querySelector(".contact-container")
+
         const addTitle = () => {
             let titleCont = Help.makeEl("div", {
                 class: "title-container"
@@ -78,6 +81,16 @@ const Contact = (() => {
                 }
             }
 
+            const addQuote = () => {
+                let infoQuoteArea = document.querySelector(".info-container")
+                let quote = Help.makeEl("blockquote", {
+                    class: "quote-one"
+                }, "\"Be The Avocado\" - Unknown")
+                let element = Help.makeEl("div", {
+                    class: "card-item",
+                }, quote)
+                infoQuoteArea.appendChild(element)
+            }
 
             const contactCard = Help.makeEl("div", {
                 class: "contact-card"
@@ -89,9 +102,28 @@ const Contact = (() => {
             populate(items)
             contactCard.appendChild(infoContainer)
             contactArea.appendChild(contactCard)
+            addQuote()
         }
 
         addElements()
+
+        const addMapImg = () => {
+            const imageSide = document.querySelector(".contact-card")
+            let locationText = Help.makeEl("p", {
+                class: "location-text"
+            }, "...somewhere over here?")
+
+            let myImg = Help.makeEl("img", {
+                class: "liberty",
+                src: liberty
+            })
+            let imgArea = Help.makeEl("div", {
+                class: "image-area"
+            }, myImg, locationText)
+
+           imageSide.appendChild(imgArea)
+        }
+        addMapImg()
     }
 
     return {
