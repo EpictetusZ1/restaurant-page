@@ -172,6 +172,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: var(--softPink);
+    margin-top: 50px;
     display: flex;
     justify-self: flex-start;
     flex-direction: column;
@@ -184,7 +185,7 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .menu-title {
@@ -194,7 +195,7 @@ body {
     font-family: "Cormorant Garamond", sans-serif;
     word-spacing: 20px;
     background-color: var(--green);
-    line-height: 100px;
+    line-height: 80px;
     border-radius: 40px;
 }
 
@@ -245,7 +246,8 @@ body {
 
 .contact-container {
     height: 100%;
-    width: 100%;
+    width: 95%;
+    margin-top: 50px;
     background-color: var(--softPink);
     display: flex;
     flex-wrap: wrap;
@@ -255,6 +257,7 @@ body {
 .contact-background {
     width: 90%;
     height: 75%;
+    margin-top: -30px;
     background-color: var(--softPink);
     border: 3px solid #FFF;
     border-radius: 30px;
@@ -359,15 +362,18 @@ body {
     width: 100%;
     height: 50px;
     position: fixed;
+    z-index: 10;
     background: #232323;
     align-items: center;
     display: flex;
     flex-direction: row-reverse;
     color: var(--softWhite);
+    font-size: 1.2em;
+    font-family: "Cormorant Garamond", sans-serif;
 }
 
 .nav-item {
-    width: 150px;
+    width: 70px;
     height: 90%;
     text-align: center;
     line-height: 45px;
@@ -376,3 +382,14 @@ body {
     margin-right: 10px;
 }
 
+#contact:hover {
+    cursor: pointer;
+}
+
+#home:hover {
+    cursor: pointer;
+}
+
+#menu:hover {
+     cursor: pointer;
+ }
