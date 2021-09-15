@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    entry: '/src/firstComponent/index.js',
+    entry: '/src/components/index.js',
     mode: "development",
     output: {
         filename: 'main.js',

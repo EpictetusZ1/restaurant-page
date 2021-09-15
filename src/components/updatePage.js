@@ -1,5 +1,5 @@
-import Helper from "../helperFunctions/helpers";
-import Menu from "../menuComp/menu";
+import Help from "../helpers/helpers";
+import Menu from "../menu/menu";
 import Hero from "./loadHero";
 
 const Update = (() => {

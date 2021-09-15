@@ -1,21 +1,21 @@
 import avoBowl from "./assets/images/avoBowl.png"
 import linesP from "./assets/images/svg/linesPink.svg"
 import linesG from "./assets/images/svg/linesGreen.svg"
-import Helper from "../helperFunctions/helpers";
+import Help from "../helpers/helpers";
 
 const Hero = (() => {
 
     const showAvocado = (contentMain) => {
 
         const displayHeroImg = () => {
-            const bowlImg = Helper.makeEl("img", {
+            const bowlImg = Help.makeEl("img", {
                 src: avoBowl,
                 class: "avo-bowl"
             })
-            let main = Helper.makeEl("div", {
+            let main = Help.makeEl("div", {
                 class: "main"
             })
-            let bowlCont = Helper.makeEl("div", {
+            let bowlCont = Help.makeEl("div", {
                 class: "bowl-container"
             })
 
@@ -26,14 +26,14 @@ const Hero = (() => {
 
         const displayLines = () => {
             const main = document.querySelector(".main")
-            const lineContainer = Helper.makeEl("div", {
+            const lineContainer = Help.makeEl("div", {
                 class: "line-container"
             })
-            const pinkLines = Helper.makeEl("img", {
+            const pinkLines = Help.makeEl("img", {
                 src: linesP,
                 class: "pink-lines"
             })
-            const greenLines = Helper.makeEl("img", {
+            const greenLines = Help.makeEl("img", {
                 src: linesG,
                 class: "green-lines"
             })
@@ -45,13 +45,13 @@ const Hero = (() => {
         const displayBackDrop = () => {
             const main = document.querySelector(".main")
             const showGreen = () => {
-                let green = Helper.makeEl("div", {
+                let green = Help.makeEl("div", {
                     class: "green-side"
                 })
                 main.appendChild(green)
             }
             const showPink = () => {
-                let pink = Helper.makeEl("div", {
+                let pink = Help.makeEl("div", {
                     class: "pink-side"
                 })
                 main.appendChild(pink)
@@ -63,29 +63,30 @@ const Hero = (() => {
         const showText = () => {
             const pinkSide = () => {
                 const pink = document.querySelector(".pink-side")
-                let textContainer = Helper.makeEl("div", {
+                let textContainer = Help.makeEl("div", {
                     class: "pink-text-container"
                 })
                 textContainer.textContent = "The Woke Millennial"
                 pink.appendChild(textContainer)
-                let btnContainer = Helper.makeEl("div", {
+                let btnContainer = Help.makeEl("div", {
                     class: "button-container"
                 })
-                let menuBtn = Helper.makeEl("div", {
+                let menuBtn = Help.makeEl("div", {
                     class: "menu-button",
                     id: "view-menu"
-                })
-                menuBtn.textContent = "View Menu"
+                }, "View Menu")
                 textContainer.appendChild(btnContainer)
                 btnContainer.appendChild(menuBtn)
 
             }
             const greenSide = () => {
                 const green = document.querySelector(".green-side")
-                let textContainer = Helper.makeEl("div", {
+                let text1 = Help.makeEl("p", 0, "All Avocado")
+                let text2 = Help.makeEl("p", 0, "All The Time")
+                let textContainer = Help.makeEl("div", {
                     class: "green-text-container"
-                })
-                textContainer.textContent = "All Avocado, All The Time"
+                },  text1, text2
+                    )
                 green.appendChild(textContainer)
             }
             pinkSide()
