@@ -20,7 +20,7 @@
     --orange: #e99f4c;
 }
 
-html {
+html, body {
     max-width: 100%;
     overflow-x: hidden;
 }

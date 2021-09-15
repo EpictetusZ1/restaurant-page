@@ -1,5 +1,6 @@
 import Helper from "../helperFunctions/helpers";
 import Menu from "../menuComp/menu";
+import Hero from "./loadHero";
 
 const Update = (() => {
     const content = document.getElementById("content")
@@ -9,6 +10,13 @@ const Update = (() => {
             case 1:
                 clear()
                 Menu.showMenu(content).populateMenu()
+                break
+            case 2:
+                clear()
+                Hero.showAvocado(content)
+                break
+            default:
+                Hero.showAvocado(content)
                 break
         }
     }
