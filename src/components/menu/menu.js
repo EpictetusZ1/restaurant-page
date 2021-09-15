@@ -1,4 +1,4 @@
-import Help from "../helpers/helpers";
+import Help from "../../helpers/helpers";
 import avo1 from "./assets/avocados/avocados-01.png";
 import avo2 from "./assets/avocados/avocados-02.png";
 import avo3 from "./assets/avocados/avocados-03.png";
@@ -68,11 +68,10 @@ const Menu = (() => {
                     let avoImg = Help.makeEl("img", {
                         src: `${arr[i].loc}`
                     })
+
                     // Menu Element
                     menuBoard.appendChild(avocado)
-
                     avocado.appendChild(avoImg)
-
                     avocado.appendChild(title)
                     avocado.appendChild(description)
                 }
@@ -86,7 +85,6 @@ const Menu = (() => {
     }
     return {
         showMenu
-
     }
 })()
 

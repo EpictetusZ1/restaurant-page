@@ -1,6 +1,7 @@
 import Help from "../helpers/helpers";
-import Menu from "../menu/menu";
 import Hero from "./loadHero";
+import Menu from "./menu/menu";
+import Contact from "./about/contact";
 
 const Update = (() => {
     const content = document.getElementById("content")
@@ -12,6 +13,10 @@ const Update = (() => {
                 Menu.showMenu(content).populateMenu()
                 break
             case 2:
+                clear()
+                Contact.showContact(content)
+                break
+            case 3:
                 clear()
                 Hero.showAvocado(content)
                 break
