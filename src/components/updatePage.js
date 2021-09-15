@@ -1,7 +1,7 @@
 import Help from "../helpers/helpers";
 import Hero from "./loadHero";
 import Menu from "./menu/menu";
-import Contact from "./about/contact";
+import Contact from "./contact/contact";
 
 const Update = (() => {
     const content = document.getElementById("content")

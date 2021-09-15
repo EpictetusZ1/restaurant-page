@@ -22,6 +22,7 @@
 
 html, body {
     max-width: 100%;
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 
@@ -242,13 +243,37 @@ body {
 
 /* Styles for About Page*/
 
-.about-container {
+.contact-container {
     height: 100%;
     width: 100%;
     background-color: var(--softPink);
     display: flex;
-    justify-self: flex-start;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-background {
+    width: 90%;
+    height: 75%;
+    background-color: var(--softPink);
+    border: 3px solid #FFF;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card {
+    width: 98%;
+    height: 98%;
+    background-color: var(--green);
+    border-radius: 30px;
+}
+
+
+.info-container {
+    width: 50%;
+    height: 100%;
+    float: left;
 }
 

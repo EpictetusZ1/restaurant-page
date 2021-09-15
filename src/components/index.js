@@ -1,8 +1,7 @@
 import "../styles/style.css"
 import Update from "./updatePage";
 import Hero from "./loadHero"
-import Menu from "./menu/menu";
-import Contact from "./about/contact";
+
 
 const content = document.getElementById("content")
 
