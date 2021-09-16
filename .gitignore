@@ -1,6 +1,7 @@
 .DS_Store
 node_modules/
-dist/
+# Remove dist/ for upload to github pages
+#dist/
 
 # Ignore IDE Configs
 .idea/
