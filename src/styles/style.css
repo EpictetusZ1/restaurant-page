@@ -23,6 +23,7 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body {
@@ -110,7 +111,8 @@ body {
     justify-content: flex-start;
     align-content: center;
     text-align: center;
-    font-size: 4em;
+    font-size: 5em;
+    font-weight: bolder;
     letter-spacing: 2px;
     color: var(--green);
 }
@@ -246,8 +248,8 @@ body {
 
 .contact-container {
     height: 100%;
-    width: 95%;
-    margin-top: 50px;
+    width: 100%;
+    margin-top: 60px;
     background-color: var(--softPink);
     display: flex;
     flex-wrap: wrap;
@@ -368,28 +370,33 @@ body {
     display: flex;
     flex-direction: row-reverse;
     color: var(--softWhite);
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-family: "Cormorant Garamond", sans-serif;
 }
 
 .nav-item {
     width: 70px;
-    height: 90%;
+    height: 102%;
     text-align: center;
-    line-height: 45px;
+    line-height: 50px;
     background: none;
     color: var(--softWhite);
     margin-right: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 #contact:hover {
     cursor: pointer;
+    background-color: var(--orange);
 }
 
 #home:hover {
     cursor: pointer;
+    background-color: var(--orange);
+
 }
 
 #menu:hover {
      cursor: pointer;
- }
+    background-color: var(--orange);
+}
