@@ -22,24 +22,24 @@
 
 html, body {
     max-width: 100%;
-    overflow: hidden;
+    max-height: 100%;
+    overflow-x: hidden;
 }
 
 body {
-    height: 1000px;
+    height: 1200px;
     width: 100vw;
-    max-width: 100%;
 }
 
 #content {
     width: 100%;
     height: 100%;
+    background-color: var(--softPink);
 }
 
 .main {
     width: 100%;
     height: 100%;
-    background-color: #939090;
     display: inline-flex;
     font-family: "Cormorant Garamond", sans-serif;
 }
@@ -172,20 +172,22 @@ body {
     width: 100%;
     height: 100%;
     background-color: var(--softPink);
-    margin-top: 50px;
+    margin-top: 30px;
+    position: absolute;
     display: flex;
-    justify-self: flex-start;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
 }
 
 .title-container {
     width: 100%;
     height: 80px;
+    justify-self: flex-start;
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 35px;
 }
 
 .menu-title {
@@ -201,16 +203,16 @@ body {
 
 .menu-background {
     width: 90%;
-    height: 75%;
-    margin: 2% 0 0 5%;
-    padding: 10px;
+    height: 100%;
+    margin: 1% 3% 0 3%;
+    padding: 8px;
     background-color: var(--softPink);
     border: 3px solid #FFF;
     border-radius: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 15px;
+    grid-gap: 0.9em;
 }
 
 .menu-item {
@@ -245,10 +247,11 @@ body {
 /* Styles for About Page*/
 
 .contact-container {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     margin-top: 50px;
     background-color: var(--softPink);
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -334,7 +337,7 @@ body {
 }
 
 .image-area {
-    height: 100%;
+    height: 90%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
