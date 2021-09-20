@@ -1,8 +1,8 @@
 .DS_Store
 node_modules/
-# Commenting out dist to add it to gh-pages
 
-dist/
+# Commenting out dist to add it to gh-pages
+#dist/
 
 # Ignore IDE Configs
 .idea/
